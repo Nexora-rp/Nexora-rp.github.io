@@ -3,11 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Néxora RP</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>Nexora RP V2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background: #0b0f14; color: #e5e7eb; font-family: 'Inter', sans-serif; line-height: 1.6; }
+
+    body {
+      background: #0b0f14;
+      color: #e5e7eb;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+    }
 
     header {
       height: 100vh;
@@ -17,6 +23,11 @@
       justify-content: center;
       text-align: center;
       padding: 20px;
+    }
+
+    header img {
+      width: 180px;
+      margin-bottom: 25px;
     }
 
     header h1 {
@@ -32,10 +43,16 @@
       color: #cbd5f5;
     }
 
+    .buttons {
+      margin-top: 35px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
     .btn {
-      display: inline-block;
-      margin-top: 2.5rem;
-      padding: 14px 36px;
+      padding: 14px 32px;
       border-radius: 4px;
       background: #1e293b;
       border: 1px solid #475569;
@@ -59,7 +76,7 @@
 
     h2 {
       font-family: 'Playfair Display', serif;
-      font-size: 2.5rem;
+      font-size: 2.4rem;
       margin-bottom: 2rem;
       text-transform: uppercase;
       letter-spacing: 2px;
@@ -77,6 +94,20 @@
       border-left: 4px solid #334155;
     }
 
+    .socials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .social {
+      background: #020617;
+      padding: 25px;
+      text-align: center;
+      border-left: 4px solid #6366f1;
+    }
+
     footer {
       text-align: center;
       padding: 50px;
@@ -92,42 +123,62 @@
 
 <header>
   <div>
-    <img src="1cc58db0-67bf-4693-b4e8-4dc92ee57a7f-Photoroom.png" alt="Logo Nexora V2" style="width:180px; margin-bottom:20px;">
-    <h1>Néxora RP V.02</h1>
+    <img src="1cc58db0-67bf-4693-b4e8-4dc92ee57a7f-Photoroom.png" alt="Logo Nexora V2">
+    <h1>Nexora RP V2</h1>
     <p>Serveur RolePlay Français • Immersion • Réalisme • Respect</p>
-    <a href="https://discord.gg/nexorarpv2" class="btn">Accéder au discord</a>
-    <a href="https://sites.google.com/view/reglement-nexora?usp=sharing" class="btn">Accéder au Réglement</a>
-    <a href="lore-ig.html" class="btn">Accéder au Lore</a>
-    <a href="metiers.html" class="btn">Accéder au Métiers</a>
+
+    <div class="buttons">
+      <a href="https://discord.gg/nexorarpv2" class="btn" target="_blank">Discord</a>
+      <a href="https://sites.google.com/view/reglement-nexora?usp=sharing" class="btn" target="_blank">Règlement</a>
+      <a href="lore-ig.html" class="btn">Lore</a>
+      <a href="metiers.html" class="btn">Métiers</a>
+    </div>
   </div>
 </header>
-  
+
 <section>
-  <h2>Bienvenue sur Néxora RP V2</h2>
+  <h2>Bienvenue sur Nexora RP V2</h2>
   <p>
-    <strong>Néxora RP V2</strong> est un serveur <strong>RolePlay français</strong>
-    orienté vers le réalisme, la cohérence des scènes et le respect du jeu de rôle.
-    Chaque joueur est libre de créer son personnage et de faire évoluer son histoire
-    dans un environnement sérieux et structuré.
+    <strong>Nexora RP V2</strong> est un serveur RolePlay français axé sur le réalisme,
+    la cohérence des scènes et le respect du jeu de rôle. Chaque joueur y construit
+    son histoire dans un environnement sérieux, structuré et immersif.
   </p>
   <br>
   <p>
-    Le serveur est <strong>en accès libre</strong>, tout en reposant sur un règlement
-    strict afin de garantir une immersion de qualité et une expérience RP crédible
-    pour l’ensemble de la communauté.
+    Le serveur est <strong>en accès libre</strong>, tout en reposant sur un règlement strict
+    garantissant une expérience RP crédible et durable.
   </p>
 </section>
 
+<section>
+  <h2>Réseaux & Créateurs</h2>
+  <p>Suivez l’actualité du serveur et les créateurs de contenu Nexora RP :</p>
 
-<section id="rejoindre">
+  <div class="socials">
+    <div class="social">
+      <h3>🎥 TikTok NicoRaffy OFF</h3>
+      <a href="https://www.tiktok.com/@nicorafyoff" target="_blank">@nicorafyoff</a>
+    </div>
+    <div class="social">
+      <h3>🎥 TikTok TheGamer42</h3>
+      <a href="https://www.tiktok.com/@thegamer421" target="_blank">@thegamer421</a>
+    </div>
+    <div class="social">
+      <h3>🎥 TikTok Filou</h3>
+      <a href="https://www.tiktok.com/@filoustitch08" target="_blank">@filoustitch08</a>
+    </div>
+  </div>
+</section>
+
+<section>
   <h2>Nous rejoindre</h2>
   <p>IP FiveM : <strong>connect 176.9.63.93:30115</strong></p>
-  <p>Discord officiel : <a href="#">discord.gg/nexorarpv2</a></p>
-  <p>Free-Accèes – Lecture du règlement requise</p>
+  <p>Discord officiel : <a href="https://discord.gg/nexorarpv2" target="_blank">discord.gg/nexorarpv2</a></p>
+  <p>Accès libre – Lecture du règlement obligatoire</p>
 </section>
 
 <footer>
-  <p>© 2026 - Néxora RP | FiveM | Crée par TheGamer42</p>
+  <p>© 2026 – Nexora RP | FiveM<br>Créé par TheGamer42</p>
 </footer>
 
 </body>
