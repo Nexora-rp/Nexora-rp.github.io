@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serveur RP Français</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0b0f14; color: #e5e7eb; font-family: 'Inter', sans-serif; line-height: 1.6; }
+
+    header {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1502877338535-766e1452684a') center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #cbd5f5;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 2.5rem;
+      padding: 14px 36px;
+      border-radius: 4px;
+      background: #1e293b;
+      border: 1px solid #475569;
+      color: #e5e7eb;
+      text-decoration: none;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #020617;
+      border-color: #94a3b8;
+    }
+
+    section {
+      padding: 100px 12%;
+      border-top: 1px solid #1e293b;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #020617;
+      padding: 30px;
+      border-left: 4px solid #334155;
+    }
+
+    footer {
+      text-align: center;
+      padding: 50px;
+      background: #020617;
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+
+    a { color: #93c5fd; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Nom du Serveur RP</h1>
+    <p>Serveur RolePlay Français • Immersion • Réalisme • Respect</p>
+    <a href="#rejoindre" class="btn">Accéder au serveur</a>
+  </div>
+</header>
+
+<section>
+  <h2>Notre vision du RP</h2>
+  <div class="cards">
+    <div class="card">🎭 RolePlay sérieux et cohérent</div>
+    <div class="card">⚖️ Règlement strict et encadré</div>
+    <div class="card">🚓 Forces de l'ordre et services réalistes</div>
+    <div class="card">🏛️ Économie stable et immersive</div>
+  </div>
+</section>
+
+<section id="rejoindre">
+  <h2>Nous rejoindre</h2>
+  <p>IP FiveM : <strong>play.tonserveurrp.fr</strong></p>
+  <p>Discord officiel : <a href="#">discord.gg/tonserveurrp</a></p>
+  <p>Whitelist obligatoire – Lecture du règlement requise</p>
+</section>
+
+<footer>
+  <p>© 2026 - Serveur RP Français | FiveM</p>
+</footer>
+
+</body>
+</html>
