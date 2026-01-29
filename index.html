@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nexora RP V2</title>
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="favicon.png">
 
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
@@ -14,13 +17,45 @@
       background: #0b0f14;
       color: #e5e7eb;
       font-family: 'Inter', sans-serif;
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
+    /* MENU FIXE */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(2,6,23,0.85);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid #1e293b;
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+      list-style: none;
+    }
+
+    nav a {
+      color: #c7d2fe;
+      text-decoration: none;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+    }
+
+    nav a:hover { color: #ffffff; }
+
+    /* HEADER */
     header {
       height: 100vh;
-      background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)),
-                  url('https://images.unsplash.com/photo-1502877338535-766e1452684a') center/cover;
+      background:
+        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)),
+        url('https://images.unsplash.com/photo-1502877338535-766e1452684a') center/cover;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -31,6 +66,13 @@
     header img {
       width: 180px;
       margin-bottom: 25px;
+      animation: logoFloat 4s ease-in-out infinite;
+    }
+
+    @keyframes logoFloat {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0); }
     }
 
     header h1 {
@@ -40,13 +82,13 @@
     }
 
     header p {
-      margin-top: 1rem;
+      margin-top: 15px;
       font-size: 1.2rem;
       color: #cbd5f5;
     }
 
     .buttons {
-      margin-top: 35px;
+      margin-top: 40px;
       display: flex;
       gap: 15px;
       flex-wrap: wrap;
@@ -71,6 +113,7 @@
       border-color: #94a3b8;
     }
 
+    /* SECTIONS */
     section {
       padding: 100px 12%;
       border-top: 1px solid #1e293b;
@@ -79,38 +122,12 @@
     h2 {
       font-family: 'Playfair Display', serif;
       font-size: 2.4rem;
-      margin-bottom: 2rem;
+      margin-bottom: 30px;
       text-transform: uppercase;
       letter-spacing: 2px;
     }
 
-    .socials {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
-    }
-
-    .social {
-      background: #020617;
-      padding: 30px;
-      text-align: center;
-      border-left: 4px solid #6366f1;
-    }
-
-    .badge {
-      display: inline-block;
-      margin: 12px 0;
-      padding: 6px 14px;
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: #e0e7ff;
-      background: linear-gradient(135deg, #4f46e5, #6366f1);
-      border-radius: 999px;
-    }
-
+    /* FOOTER */
     footer {
       text-align: center;
       padding: 50px;
@@ -125,9 +142,21 @@
 
 <body>
 
+<!-- MENU -->
+<nav>
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="lore-ig.html">Lore</a></li>
+    <li><a href="metiers.html">Métiers</a></li>
+    <li><a href="createurs.html">Créateurs</a></li>
+    <li><a href="staff.html">Staff</a></li>
+  </ul>
+</nav>
+
+<!-- HEADER -->
 <header>
   <div>
-    <img src="1cc58db0-67bf-4693-b4e8-4dc92ee57a7f-Photoroom.png" alt="Logo Nexora V2">
+    <img src="1cc58db0-67bf-4693-b4e8-4dc92ee57a7f-Photoroom.png" alt="Logo Nexora RP">
     <h1>Nexora RP V2</h1>
     <p>Serveur RolePlay Français • Immersion • Réalisme • Respect</p>
 
@@ -140,44 +169,21 @@
   </div>
 </header>
 
+<!-- PRESENTATION -->
 <section>
-  <h2>Bienvenue sur Nexora RP V2</h2>
+  <h2>Bienvenue sur Nexora</h2>
   <p>
     <strong>Nexora RP V2</strong> est un serveur RolePlay français axé sur le réalisme,
     la cohérence des scènes et le respect du jeu de rôle.
   </p>
   <br>
   <p>
-    Le serveur est <strong>en accès libre</strong>, tout en reposant sur un règlement strict
-    garantissant une expérience RP crédible et durable.
+    Le serveur est <strong>en accès libre</strong>, mais repose sur un règlement strict
+    garantissant une expérience RP crédible, immersive et durable.
   </p>
 </section>
 
-<section>
-  <h2>Créateurs officiels Nexora</h2>
-  <p>Créateurs de contenu reconnus et validés par le serveur :</p>
-
-  <div class="socials">
-    <div class="social">
-      <h3>🎥 NicoRaffy OFF</h3>
-      <span class="badge">Créateur officiel Nexora</span><br>
-      <a href="https://www.tiktok.com/@nicorafyoff" target="_blank">@nicorafyoff</a>
-    </div>
-
-    <div class="social">
-      <h3>🎥 TheGamer42</h3>
-      <span class="badge">Créateur officiel Nexora</span><br>
-      <a href="https://www.tiktok.com/@thegamer421" target="_blank">@thegamer421</a>
-    </div>
-
-    <div class="social">
-      <h3>🎥 Filou</h3>
-      <span class="badge">Créateur officiel Nexora</span><br>
-      <a href="https://www.tiktok.com/@filoustitch08" target="_blank">@filoustitch08</a>
-    </div>
-  </div>
-</section>
-
+<!-- REJOINDRE -->
 <section>
   <h2>Nous rejoindre</h2>
   <p>IP FiveM : <strong>connect 176.9.63.93:30115</strong></p>
